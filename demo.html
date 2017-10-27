@@ -2,10 +2,28 @@
 
 <head>
     <title>My Demo Page</title>
+    <style>
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+
+        .bg img {
+            min-height: 100%;
+            width: 100%;
+        }
+    </style>
+
 </head>
 
-<body style="background-image: url(./demo.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;">
-    <!--<img src="./demo.jpg" />-->
+<body>
+    <div class="bg">
+        <img src="./demo.jpg">
+    </div>
 </body>
 
 </html>
