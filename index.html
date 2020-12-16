@@ -146,7 +146,10 @@
                                     <button class="delete" @click.prevent="messageRemove(index)"></button>
                                 </div>
                                 <div v-for="currMsg in messageContent(message)" class="message-body">
-                                    <p v-for="item in JSON.parse(currMsg)">Country: {{item.Country_Region}}, Confirmed: {{item.Confirmed}}</p>
+                                    <p v-for="item in JSON.parse(currMsg)">
+                                        Country: {{item.Country_Region}}, Confirmed: {{item.Confirmed}}, <br />
+                                        Active: {{item.Active}}, Deaths: {{item.Deaths}}
+                                    </p>
                                 </div>
                                                             </div>
                             </article>

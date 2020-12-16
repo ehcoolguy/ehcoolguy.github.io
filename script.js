@@ -51,7 +51,7 @@ const app = new Vue({
 
             subscribe: {
                 form: {
-                    topic: 'jhu/csse/covid19/cases/*/update/Malaysia/*',
+                    topic: 'jhu/csse/covid19/cases/region/update/Malaysia/*',
                     buttons: {
                         subscribe: 'Subscribe'
                     }
@@ -193,7 +193,7 @@ const app = new Vue({
                 return [container && container.getValue() || '<empty>'];
             }
             // return [message.getBinaryAttachment() || ''];
-            return [message.getXmlContentDecoded() || ''];
+            return [message.getXmlContentDecoded()];
         },
 
         // Removes a message from the display.
