@@ -51,7 +51,7 @@ const app = new Vue({
 
             subscribe: {
                 form: {
-                    topic: 'jhu/csse/covid19/cases/*/update/US/*',
+                    topic: 'jhu/csse/covid19/cases/*/update/Malaysia/*',
                     buttons: {
                         subscribe: 'Subscribe'
                     }

@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <h1>Realtime COVID-19 Message Stream Demo</h1>
+    <h3>Data is coming from <a href="https://systems.jhu.edu/research/public-health/ncov/">JOHN HOPKINS UNIVERSITY</a></h3>
     <!-- partial:index.partial.html -->
     <div id="vue-loading">
         <i class="fas fa-circle-notch fa-spin fa-3x fa-fw"></i>
@@ -146,16 +148,7 @@
                                 <div v-for="currMsg in messageContent(message)" class="message-body">
                                     <pre> {{ JSON.parse(currMsg) }}</pre>
                                 </div>
-                                <div class="message-format">
-                                    <div class="control">
-                                        <label class="radio">
-                    <input type="radio" value="sdtText" v-model="message.format"> text
-                  </label>
-                  <label class="radio">
-                    <input type="radio" value="binaryAttachment" v-model="message.format"> binary
-                  </label>
-                                    </div>
-                                </div>
+\                                </div>
                             </article>
                         </div>
                     </div>
